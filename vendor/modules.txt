@@ -2,6 +2,8 @@
 github.com/Unknwon/com
 # github.com/beorn7/perks v1.0.0
 github.com/beorn7/perks/quantile
+# github.com/fatih/color v1.7.0
+github.com/fatih/color
 # github.com/go-macaron/auth v0.0.0-20161228062157-884c0e6c9b92
 github.com/go-macaron/auth
 # github.com/go-macaron/binding v0.0.0-20170611065819-ac54ee249c27
@@ -16,10 +18,16 @@ github.com/go-xorm/core
 github.com/go-xorm/xorm
 # github.com/golang/protobuf v1.3.1
 github.com/golang/protobuf/proto
+# github.com/hokaccha/go-prettyjson v0.0.0-20180920040306-f579f869bbfe
+github.com/hokaccha/go-prettyjson
 # github.com/lib/pq v1.1.1
 github.com/lib/pq
 github.com/lib/pq/oid
 github.com/lib/pq/scram
+# github.com/mattn/go-colorable v0.1.2
+github.com/mattn/go-colorable
+# github.com/mattn/go-isatty v0.0.8
+github.com/mattn/go-isatty
 # github.com/matttproud/golang_protobuf_extensions v1.0.1
 github.com/matttproud/golang_protobuf_extensions/pbutil
 # github.com/prometheus/client_golang v1.0.0
@@ -35,10 +43,13 @@ github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
 # github.com/prometheus/procfs v0.0.2
 github.com/prometheus/procfs
 github.com/prometheus/procfs/internal/fs
+# github.com/the-redback/go-oneliners v0.0.0-20190417084731-74f7694e6dae
+github.com/the-redback/go-oneliners
 # golang.org/x/crypto v0.0.0-20190308221718-c2843e01d9a2
 golang.org/x/crypto/pbkdf2
-# golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a
+# golang.org/x/sys v0.0.0-20190222072716-a9d3bda3a223
 golang.org/x/sys/windows
+golang.org/x/sys/unix
 # gopkg.in/ini.v1 v1.42.0
 gopkg.in/ini.v1
 # gopkg.in/macaron.v1 v1.3.2
