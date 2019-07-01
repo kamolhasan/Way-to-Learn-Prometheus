@@ -28,7 +28,7 @@ type BookList struct {
 
 var (
 	Username = "kamol"
-	Password = "hhh"
+	Password = "hasan"
 )
 
 var Engine *xorm.Engine

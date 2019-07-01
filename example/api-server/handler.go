@@ -1,11 +1,11 @@
 package server
 
 import (
-	"fmt"
-	"github.com/prometheus/client_golang/prometheus"
 	"log"
 	"net/http"
 	"strconv"
+
+	"github.com/prometheus/client_golang/prometheus"
 
 	"gopkg.in/macaron.v1"
 )
@@ -23,10 +23,10 @@ func GetBooks(ctx *macaron.Context) {
 	ctx.JSON(http.StatusOK, bookList)
 
 	// prometheus
-	prom_httpRequestTotal.With(prometheus.Labels{"method":"GET","code":strconv.Itoa(ctx.Resp.Status())}).Inc()
+	prom_httpRequestTotal.With(prometheus.Labels{"method": "GET", "code": strconv.Itoa(ctx.Resp.Status())}).Inc()
 }
 
-func demo(w http.ResponseWriter, r *http.Request)   {
+func demo(w http.ResponseWriter, r *http.Request) {
 
 }
 func GetBook(ctx *macaron.Context) {
@@ -37,13 +37,13 @@ func GetBook(ctx *macaron.Context) {
 	if exist, err := Engine.Get(&book); err != nil {
 		ctx.JSON(http.StatusInternalServerError, err)
 	} else if exist {
-		ctx.JSON(http.StatusFound, book)
+		ctx.JSON(http.StatusOK, book)
 	} else {
 		ctx.JSON(http.StatusNotFound, nil)
 	}
 
 	// prometheus
-	prom_httpRequestTotal.With(prometheus.Labels{"method":"GET","code":strconv.Itoa(ctx.Resp.Status())}).Inc()
+	prom_httpRequestTotal.With(prometheus.Labels{"method": "GET", "code": strconv.Itoa(ctx.Resp.Status())}).Inc()
 }
 
 func PostBook(ctx *macaron.Context, list BookList) {
@@ -74,7 +74,7 @@ func PostBook(ctx *macaron.Context, list BookList) {
 	ctx.JSON(http.StatusOK, bookList)
 
 	// prometheus
-	prom_httpRequestTotal.With(prometheus.Labels{"method":"POST","code":strconv.Itoa(ctx.Resp.Status())}).Inc()
+	prom_httpRequestTotal.With(prometheus.Labels{"method": "POST", "code": strconv.Itoa(ctx.Resp.Status())}).Inc()
 
 }
 
@@ -88,12 +88,11 @@ func UpdateBook(ctx *macaron.Context, book Book) {
 	ctx.JSON(http.StatusOK, book)
 
 	// prometheus
-	prom_httpRequestTotal.With(prometheus.Labels{"method":"POST","code":strconv.Itoa(ctx.Resp.Status())}).Inc()
+	prom_httpRequestTotal.With(prometheus.Labels{"method": "POST", "code": strconv.Itoa(ctx.Resp.Status())}).Inc()
 
 }
 
 func NotFoundFunc(ctx *macaron.Context) {
 	ctx.JSON(http.StatusBadRequest, nil)
-	fmt.Println("lsdkajfl;fddddddddddddddddddd")
-	prom_notFoundTotal.With(prometheus.Labels{"method":ctx.Req.Method, "URL": ctx.Req.RequestURI}).Inc()
+	prom_notFoundTotal.With(prometheus.Labels{"method": ctx.Req.Method, "URL": ctx.Req.RequestURI}).Inc()
 }
