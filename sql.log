@@ -1,3 +1,63 @@
-[xorm] [info]  2019/06/28 18:20:17.350012 [SQL] BEGIN TRANSACTION
-[xorm] [info]  2019/06/28 18:20:17.350101 [SQL] CREATE TABLE IF NOT EXISTS "Book" ("ID" VARCHAR(255) PRIMARY KEY NOT NULL, "Name" VARCHAR(255) NULL, "Author" VARCHAR(255) NULL)
-[xorm] [info]  2019/06/28 18:20:17.350283 [SQL] COMMIT
+[xorm] [info]  2019/07/03 12:05:11.906300 [SQL] BEGIN TRANSACTION
+[xorm] [info]  2019/07/03 12:05:11.906379 [SQL] CREATE TABLE IF NOT EXISTS "Book" ("ID" VARCHAR(255) PRIMARY KEY NOT NULL, "Name" VARCHAR(255) NULL, "Author" VARCHAR(255) NULL)
+[xorm] [info]  2019/07/03 12:05:11.908199 [SQL] COMMIT
+[xorm] [info]  2019/07/03 12:05:30.504305 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:05:45.522929 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:05:50.526686 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:05:50.527418 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:05:50.527933 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:05:50.528399 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:05:50.528852 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:05:55.530858 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:06:00.535251 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:06:05.538120 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"6"}
+[xorm] [info]  2019/07/03 12:06:10.540712 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:06:10.541859 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:06:10.542694 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:06:10.543505 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:06:10.544404 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:06:15.546246 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:06:20.547620 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:06:25.551810 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:06:25.552982 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:06:25.553933 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:06:25.554970 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:06:25.555811 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:06:35.559484 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"6"}
+[xorm] [info]  2019/07/03 12:06:40.561934 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:06:45.564690 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:07:00.571507 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:07:10.574478 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:07:10.575608 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:07:10.576544 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:07:10.577284 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:07:10.578004 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:07:15.580279 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:07:20.582934 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"6"}
+[xorm] [info]  2019/07/03 12:07:25.585524 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:07:30.588465 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:07:35.593057 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:07:40.598445 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"6"}
+[xorm] [info]  2019/07/03 12:07:45.600792 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:07:45.601339 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:07:45.601615 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:07:45.601864 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:07:45.602108 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:07:50.603510 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:07:55.606363 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:08:00.617361 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:08:00.617972 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:08:00.618337 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:08:00.618706 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:08:00.619070 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:08:15.623057 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:08:20.625621 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:08:25.628507 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:08:30.631657 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
+[xorm] [info]  2019/07/03 12:08:35.636131 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:08:40.639036 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"1"}
+[xorm] [info]  2019/07/03 12:08:40.639625 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"2"}
+[xorm] [info]  2019/07/03 12:08:40.639853 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"3"}
+[xorm] [info]  2019/07/03 12:08:40.640045 [SQL] SELECT "ID", "Name", "Author" FROM "Book" WHERE "ID"=$1 LIMIT 1 []interface {}{"4"}
+[xorm] [info]  2019/07/03 12:08:40.640221 [SQL] SELECT "ID", "Name", "Author" FROM "Book"
+[xorm] [info]  2019/07/03 12:08:45.641582 [SQL] UPDATE "Book" SET "ID" = $1, "Name" = $2, "Author" = $3 WHERE "ID"=$4 []interface {}{"4", "Harry Potter and the Philosopher’s Stone ", "J.K. Rowling", "4"}
